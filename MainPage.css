@@ -3,6 +3,22 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+  height: 150px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: rgb(158, 158, 158);
+}
 html {
   height: 14000px;
   width: 100%;
@@ -25,6 +41,7 @@ body {
     rgba(0, 0, 0, 1) 65%,
     rgba(0, 0, 0, 1) 100%
   );
+  overflow: overlay;
 }
 .main-header {
   width: 100%;

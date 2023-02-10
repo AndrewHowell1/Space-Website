@@ -134,6 +134,7 @@ body {
 .project:after {
   border-radius: 18px;
 }
+/* custom colors for each project element */
 .project-1:before {
   background-color: #ff0044 !important;
 }
@@ -174,6 +175,7 @@ body {
 [class*="stacked-"]:after {
   z-index: -2;
 }
+/* moves elements on hover */
 .stacked-bottom-right:hover {
   transform: translate(-6px, -6px);
 }

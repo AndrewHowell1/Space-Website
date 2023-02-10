@@ -17,6 +17,10 @@
   </head>
 
   <body>
+    <div id="particles-js">
+      <script src="Stars/particles.js"></script>
+      <script src="Stars/app.js"></script>
+    </div>
     <header class="main-header">
       <nav class="main-nav">
         <ul class="main-nav__items">
@@ -35,13 +39,36 @@
         </ul>
       </nav>
     </header>
-    <div id="particles-js"></div>
-    <script src="Stars/particles.js"></script>
-    <script src="Stars/app.js"></script>
-    <script src="gradient.js"></script>
-    </div>
-
-    <img src="Svg/double-arrow-up-circle.svg" id="top-button" onclick="topfunction()"/>
-    <script src="ScrollTop/ScrollTop.js"></script>
+    <main>
+      <div class="spacer"></div>
+      <div class="col">
+        <div class="project project-1 stacked-bottom-right">
+          <div class="project-content">
+            <code class="title">.stacked-bottom-right</code>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project project-2 stacked-bottom-right">
+          <div class="project-content">
+            <code class="title">.stacked-bottom-right</code>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project project-3 stacked-bottom-right">
+          <div class="project-content">
+            <code class="title">.stacked-bottom-right</code>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Svg/double-arrow-up-circle.svg"
+        id="top-button"
+        onclick="topfunction()"
+      />
+      <script src="gradient.js"></script>
+      <script src="ScrollTop/ScrollTop.js"></script>
+    </main>
   </body>
 </html>

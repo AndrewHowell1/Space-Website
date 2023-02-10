@@ -6,6 +6,8 @@
     <link rel="shortcut icon" href="Svg/Satellite.svg" />
     <title>Andrew Howell</title>
     <link rel="stylesheet" type="text/css" href="MainPage.css" />
+    <link rel="stylesheet" type="text/css" href="ScrollTop/ScrollTop.css" />
+    <link rel="stylesheet" type="text/css" href="Stars/Particles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
@@ -25,39 +27,41 @@
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a href="index.html">About Me</a>
+            <a href="0" class="main-nav__item__button">Home</a>
           </li>
           <li class="main-nav__item">
-            <a href="index.html">Stats For Me</a>
+            <a href="index.html" class="main-nav__item__button">About Me</a>
           </li>
           <li class="main-nav__item">
-            <a href="index.html">Learn More</a>
+            <a href="index.html" class="main-nav__item__button">Contact</a>
           </li>
           <li class="main-nav__item" id="main-nav__item--CTA">
-            <a id="fade-button" href="index.html">Projects</a>
+            <a href="#project-heading__scrollto">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="spacer"></div>
-      <div class="col">
+      <div id="project-heading__scrollto"></div>
+      <h2 id="project-heading">PROJECTS</h2>
+      <div class="col col-1">
         <div class="project project-1 stacked-bottom-right">
-          <div class="project-content">
+          <div class="project__content">
             <code class="title">.stacked-bottom-right</code>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col col-2">
         <div class="project project-2 stacked-bottom-right">
-          <div class="project-content">
+          <div class="project__content">
             <code class="title">.stacked-bottom-right</code>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col col-3">
         <div class="project project-3 stacked-bottom-right">
-          <div class="project-content">
+          <div class="project__content">
             <code class="title">.stacked-bottom-right</code>
           </div>
         </div>

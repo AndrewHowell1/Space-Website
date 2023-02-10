@@ -24,6 +24,8 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
 }
 body {
   height: 100%;
@@ -32,19 +34,20 @@ body {
 }
 .main-header {
   width: 100%;
+  height: 90px;
   position: fixed;
   padding: 8px 16px;
   z-index: 100;
+  background-color: rgba(109, 109, 109, 0.1);
+  backdrop-filter: blur(3px);
 }
 .main-header div {
   display: inline-block;
   vertical-align: middle;
 }
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 60px);
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
 }
 .main-nav__items {
   margin: 0;
@@ -63,70 +66,64 @@ body {
   color: #ffffff;
   border-radius: 5px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 16px;
   padding: 10px 25px;
   transform: scale(1);
   transition: all 0.1s ease-out;
 }
-#main-nav__item--CTA a {
-  margin-left: 15px;
-  margin-right: 15px;
-  background: linear-gradient(0deg, #00ffff, #ea00ff);
-}
-.main-nav__item a:hover,
-.main-nav__item a:active {
+.main-nav__item__button:hover,
+.main-nav__item__button:active {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
-.main-nav__item--CTA:hover,
-.main-nav__item--CTA:active {
-  transform: scale(1.05);
+#main-nav__item--CTA a {
+  margin-left: 15px;
+  margin-right: 15px;
+  background: rgba(255, 255, 255, 0.247);
 }
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 9000px;
-}
-#top-button {
-  visibility: hidden;
-  position: fixed; /* Fixed/sticky position */
-  bottom: 40px; /* Place the button at the bottom of the page */
-  right: 60px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  cursor: pointer;
-  transition: all 0.5s ease-out;
+#main-nav__item--CTA a:hover,
+#main-nav__item--CTA a:active {
+  transform: scale(1.1);
+  background-color: green;
 }
 .spacer {
+  width: 100%;
+  height: 3300px;
+}
+#project-heading__scrollto {
   width: 100%;
   height: 300px;
 }
 .col {
-  margin: 5rem;
+  margin: auto;
 }
 @media (min-width: 650px) {
   .col {
-    width: 60%;
-    float: left;
+    width: 80%;
   }
-  .col:nth-of-type(2n + 1) {
-    clear: left;
-  }
+}
+.col-1 {
+  margin-top: 8rem;
+}
+.col-2,
+.col-3 {
+  margin-top: 12rem;
 }
 .project {
   display: block;
   text-align: center;
   color: #eeeeee;
 }
-.project .project-content {
+.project .project__content {
   padding: 4rem 1rem;
-  height: 400px;
+  height: 500px;
 }
 .project .project-title {
   font-size: 1.25rem;
   padding: 0.5rem;
 }
-.project .project-content {
+.project .project__content {
   background-color: #555555 !important;
   border-radius: 18px;
 }
@@ -155,7 +152,7 @@ body {
 }
 [class*="stacked-"] {
   position: relative;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   will-change: transform;
 }
 [class*="stacked-"]:before,
@@ -167,7 +164,7 @@ body {
   bottom: 0;
   left: 0;
   background-color: currentColor;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 [class*="stacked-"]:before {
   z-index: -1;
@@ -177,20 +174,26 @@ body {
 }
 /* moves elements on hover */
 .stacked-bottom-right:hover {
-  transform: translate(-6px, -6px);
+  transform: translate(-7px, -7px);
 }
-.stacked-bottom-right:hover:before {
-  transform: translate(6px, 6px);
+.project-1:hover:before {
+  transform: translate(7px, 7px);
+  box-shadow: 10px 10px 30px #ff00443d;
+}
+.project-2:hover:before {
+  transform: translate(7px, 7px);
+  box-shadow: 10px 10px 30px #5d00ff70;
+}
+.project-3:hover:before {
+  transform: translate(7px, 7px);
+  box-shadow: 10px 10px 30px #00ccff2f;
 }
 .project-1:hover:after {
-  transform: translate(12px, 12px);
-  box-shadow: 0 0 20px #ff004448;
+  transform: translate(14px, 14px);
 }
 .project-2:hover:after {
-  transform: translate(12px, 12px);
-  box-shadow: 0 0 20px #5e00ff48;
+  transform: translate(14px, 14px);
 }
 .project-3:hover:after {
-  transform: translate(12px, 12px);
-  box-shadow: 0 0 20px #00caff48;
+  transform: translate(14px, 14px);
 }

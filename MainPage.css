@@ -33,6 +33,9 @@ body {
   overflow: overlay;
 }
 .main-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
   height: 90px;
   position: fixed;
@@ -41,51 +44,47 @@ body {
   background-color: rgba(109, 109, 109, 0.1);
   backdrop-filter: blur(3px);
 }
-.main-header div {
-  display: inline-block;
-  vertical-align: middle;
-}
-.main-nav {
-  display: flex;
-  justify-content: center;
-}
-.main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.main-nav__item {
-  display: inline-block;
-}
 .main-nav__item a {
-  display: inline-block;
+  display: block;
+  padding: 10px 25px;
+  background-color: transparent;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #ffffff;
-  border-radius: 5px;
-  margin-right: 20px;
-  margin-top: 16px;
+  border: 1px solid #ffffff2f;
+  transition: all 0.1s ease-out;
+}
+.main-nav__item__CTA a {
+  display: block;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
   padding: 10px 25px;
+  background-color: transparent;
+  border: 2px solid #ff0044;
+  border-image-source: linear-gradient(
+    135deg,
+    rgba(255, 0, 68, 1) 0%,
+    rgba(94, 0, 255, 1) 50%,
+    rgba(0, 202, 255, 1) 100%
+  );
+  border-image-slice: 4;
+  overflow: hidden;
   transform: scale(1);
   transition: all 0.1s ease-out;
 }
-.main-nav__item__button:hover,
-.main-nav__item__button:active {
+.main-nav__item a:hover,
+.main-nav__item a:active {
   transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.192);
 }
-#main-nav__item--CTA a {
-  margin-left: 15px;
-  margin-right: 15px;
-  background: rgba(255, 255, 255, 0.247);
-}
-#main-nav__item--CTA a:hover,
-#main-nav__item--CTA a:active {
+.main-nav__item__CTA a:hover,
+.main-nav__item__CTA a:active {
   transform: scale(1.1);
-  background-color: green;
 }
 .spacer {
   width: 100%;
@@ -93,7 +92,7 @@ body {
 }
 #project-heading__scrollto {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 .col {
   margin: auto;

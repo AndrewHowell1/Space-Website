@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap"
       rel="stylesheet"
     />
+    <script src="Animations/Animations.js"></script>
   </head>
 
   <body>
@@ -25,49 +26,51 @@
     </div>
     <header class="main-header">
       <div class="main-nav__item">
-        <a href="#top" class="main-nav__item__button">Home</a>
+        <a href="#top" class="main-nav__item__button highlight">Home</a>
       </div>
       <div class="main-nav__item">
-        <a href="index.html" class="main-nav__item__button">About Me</a>
+        <a href="index.html" class="main-nav__item__button highlight">Skills</a>
       </div>
       <div class="main-nav__item">
-        <a href="index.html" class="main-nav__item__button">Contact</a>
+        <a href="index.html" class="main-nav__item__button highlight"
+          >Contact</a
+        >
       </div>
-      <div class="main-nav__item__CTA">
+      <div class="main-nav__item__CTA highlight">
         <a href="#projects">Projects</a>
       </div>
     </header>
     <main>
-      <div id="projects">
-        <h2 class="projects-heading">PROJECTS</h2>
-        <div class="col col-1">
+      <section id="projects">
+        <h2 class="projects-heading reveal">PROJECTS</h2>
+        <div class="col col-1 reveal fade-bottom">
           <div class="project project-1 stacked-bottom-right">
             <div class="project__content">
               <code class="title">.stacked-bottom-right</code>
             </div>
           </div>
         </div>
-        <div class="col col-2">
+        <div class="col col-2 reveal fade-bottom">
           <div class="project project-2 stacked-bottom-right">
             <div class="project__content">
               <code class="title">.stacked-bottom-right</code>
             </div>
           </div>
         </div>
-        <div class="col col-3">
+        <div class="col col-3 reveal">
           <div class="project project-3 stacked-bottom-right">
             <div class="project__content">
               <code class="title">.stacked-bottom-right</code>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <img
         src="Svg/double-arrow-up-circle.svg"
         id="top-button"
+        title="Top of page"
         onclick="topfunction()"
       />
-      <script src="gradient.js"></script>
       <script src="ScrollTop/ScrollTop.js"></script>
     </main>
   </body>

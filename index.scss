@@ -185,7 +185,7 @@ body {
   opacity: 0;
   transition: 1s all ease;
 }
-.reveal.active {
+.reve:aive {
   transform: translateY(0);
   opacity: 1;
 }
@@ -202,41 +202,47 @@ body {
 .project {
   text-align: center;
   color: #eeeeee;
-}
-.project .project__content {
-  padding: 4rem 1rem;
-  height: 600px;
-}
-.project .project-title {
-  font-size: 1.25rem;
-  padding: 0.5rem;
-}
-.project .project__content {
-  background-color: #444444 !important;
-  border-radius: 18px;
-}
-.project:before,
-.project:after {
-  border-radius: 18px;
+  &:before {
+    border-radius: 18px;
+  }
+  &:after {
+    border-radius: 18px;
+  }
+  &__content {
+    padding: 4rem 1rem;
+    height: 600px;
+    background-color: #444444 !important;
+    border-radius: 18px;
+  }
+  &__title {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
 }
 /* custom colors for each project element */
-.project-1:before {
-  background-color: #ff0044 !important;
+.project-1 {
+  &:before {
+    background-color: #ff0044 !important;
+  }
+  &:after {
+    background-color: #ff004444 !important;
+  }
 }
-.project-1:after {
-  background-color: #ff004444 !important;
+.project-2 {
+  &:before {
+    background-color: #5e00ff !important;
+  }
+  &:after {
+    background-color: #5e00ff44 !important;
+  }
 }
-.project-2:before {
-  background-color: #5e00ff !important;
-}
-.project-2:after {
-  background-color: #5e00ff44 !important;
-}
-.project-3:before {
-  background-color: #00caff !important;
-}
-.project-3:after {
-  background-color: #00ccff31 !important;
+.project-3 {
+  &:before {
+    background-color: #00caff !important;
+  }
+  &:after {
+    background-color: #00ccff31 !important;
+  }
 }
 [class*="stacked-"] {
   position: relative;
@@ -264,24 +270,30 @@ body {
 .stacked-bottom-right:hover {
   transform: translate(-7px, -7px);
 }
-.project-1:hover:before {
-  transform: translate(7px, 7px);
-  box-shadow: 10px 10px 30px #ff00443d;
+.project-1:hover {
+  &:before {
+    transform: translate(7px, 7px);
+    box-shadow: 10px 10px 30px #ff00443d;
+  }
+  &:after {
+    transform: translate(14px, 14px);
+  }
 }
-.project-2:hover:before {
-  transform: translate(7px, 7px);
-  box-shadow: 10px 10px 30px #5d00ff70;
+.project-2:hover {
+  &:before {
+    transform: translate(7px, 7px);
+    box-shadow: 10px 10px 30px #5d00ff70;
+  }
+  &:after {
+    transform: translate(14px, 14px);
+  }
 }
-.project-3:hover:before {
-  transform: translate(7px, 7px);
-  box-shadow: 10px 10px 30px #00ccff2f;
-}
-.project-1:hover:after {
-  transform: translate(14px, 14px);
-}
-.project-2:hover:after {
-  transform: translate(14px, 14px);
-}
-.project-3:hover:after {
-  transform: translate(14px, 14px);
+.project-3:hover {
+  &:before {
+    transform: translate(7px, 7px);
+    box-shadow: 10px 10px 30px #00ccff2f;
+  }
+  &:after {
+    transform: translate(14px, 14px);
+  }
 }

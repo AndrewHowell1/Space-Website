@@ -51,7 +51,7 @@ body {
   background-color: rgba(109, 109, 109, 0.1);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  box-shadow: 0 6px 4px 0px rgba(0, 0, 0, 0.137254902);
+  box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.2039215686);
 }
 
 @media (max-width: 600px) {
@@ -102,20 +102,58 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.video-container .city-video {
-  z-index: 0;
-  top: 0;
-  left: 0;
+.background__container {
+  display: flex;
+}
+.background__video {
+  position: relative;
+  margin-right: -100%;
+  flex: 0 0 auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.background__overlay {
+  position: relative;
+  margin-right: -100%;
+  flex: 0 0 auto;
+  width: 100%;
+  z-index: 3;
+}
+.background__overlay__container {
+  padding-right: 6.5rem;
+  padding-left: 6.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.background__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 100%;
+}
+.background__info__name p {
+  font-size: 4rem;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.137254902);
 }
 
 #projects {
   display: flex;
   flex-direction: column;
-  position: absolute;
   width: 100%;
-  background-color: #222222;
+  background-color: #0d1117;
   box-shadow: rgb(0, 202, 255);
-  z-index: 10;
+  z-index: 1;
   border-top: 1px solid #424242;
   border-bottom: 1px solid #424242;
 }

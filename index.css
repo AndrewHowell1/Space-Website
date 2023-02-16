@@ -187,7 +187,7 @@ body {
   transition: 1s all ease;
 }
 
-.reveal.active {
+.reve:aive {
   transform: translateY(0);
   opacity: 1;
 }
@@ -209,32 +209,27 @@ body {
   text-align: center;
   color: #eeeeee;
 }
-
-.project .project__content {
+.project:before {
+  border-radius: 18px;
+}
+.project:after {
+  border-radius: 18px;
+}
+.project__content {
   padding: 4rem 1rem;
   height: 600px;
-}
-
-.project .project-title {
-  font-size: 1.25rem;
-  padding: 0.5rem;
-}
-
-.project .project__content {
   background-color: #444444 !important;
   border-radius: 18px;
 }
-
-.project:before,
-.project:after {
-  border-radius: 18px;
+.project__title {
+  font-size: 1.25rem;
+  padding: 0.5rem;
 }
 
 /* custom colors for each project element */
 .project-1:before {
   background-color: #ff0044 !important;
 }
-
 .project-1:after {
   background-color: rgba(255, 0, 68, 0.2666666667) !important;
 }
@@ -242,7 +237,6 @@ body {
 .project-2:before {
   background-color: #5e00ff !important;
 }
-
 .project-2:after {
   background-color: rgba(94, 0, 255, 0.2666666667) !important;
 }
@@ -250,7 +244,6 @@ body {
 .project-3:before {
   background-color: #00caff !important;
 }
-
 .project-3:after {
   background-color: rgba(0, 204, 255, 0.1921568627) !important;
 }
@@ -290,25 +283,22 @@ body {
   transform: translate(7px, 7px);
   box-shadow: 10px 10px 30px rgba(255, 0, 68, 0.2392156863);
 }
+.project-1:hover:after {
+  transform: translate(14px, 14px);
+}
 
 .project-2:hover:before {
   transform: translate(7px, 7px);
   box-shadow: 10px 10px 30px rgba(93, 0, 255, 0.4392156863);
+}
+.project-2:hover:after {
+  transform: translate(14px, 14px);
 }
 
 .project-3:hover:before {
   transform: translate(7px, 7px);
   box-shadow: 10px 10px 30px rgba(0, 204, 255, 0.1843137255);
 }
-
-.project-1:hover:after {
-  transform: translate(14px, 14px);
-}
-
-.project-2:hover:after {
-  transform: translate(14px, 14px);
-}
-
 .project-3:hover:after {
   transform: translate(14px, 14px);
 }/*# sourceMappingURL=index.css.map */

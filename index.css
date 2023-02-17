@@ -140,11 +140,10 @@ body {
   height: 100%;
 }
 .background__info__name p {
-  font-size: 4rem;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 1rem;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.137254902);
+  color: #f2f2f2;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 8vw;
+  text-shadow: -4px 4px #222222;
 }
 
 #projects {

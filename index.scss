@@ -86,15 +86,15 @@ body {
       padding: 10px 25px;
       background: linear-gradient(
         135deg,
-        rgba(255, 0, 68, 0.2) 0%,
-        rgba(94, 0, 255, 0.2) 50%,
+        rgba(184, 115, 51, 0.2) 20%,
+        rgba(94, 0, 255, 0.2) 70%,
         rgba(0, 202, 255, 0.2) 100%
       );
       border: 2px solid #ff0044;
       border-image-source: linear-gradient(
         135deg,
-        rgba(255, 0, 68, 1) 0%,
-        rgba(94, 0, 255, 1) 50%,
+        rgba(184, 115, 51, 1) 20%,
+        rgba(94, 0, 255, 1) 70%,
         rgba(0, 202, 255, 1) 100%
       );
       border-image-slice: 4;
@@ -153,19 +153,31 @@ body {
     }
   }
 }
-#projects {
+// Sec
+@mixin section__theme {
   display: flex;
   flex-direction: column;
   width: 100%;
-  box-shadow: rgba(0, 202, 255, 1);
   z-index: 1;
 }
-.projects-heading {
+@mixin section__heading {
   float: left;
   font-size: 4rem;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   margin-top: 4rem;
   margin-left: 12%;
+}
+#skills {
+  @include section__theme;
+}
+.skills__heading {
+  @include section__heading;
+}
+#projects {
+  @include section__theme;
+}
+.projects__heading {
+  @include section__heading;
 }
 .col {
   margin: auto;
@@ -226,7 +238,7 @@ body {
     background-color: #b87333 !important;
   }
   &:after {
-    background-color: #b8733356 !important;
+    background-color: #b8733333 !important;
   }
 }
 .project-2 {
@@ -273,7 +285,7 @@ body {
 .project-1:hover {
   &:before {
     transform: translate(7px, 7px);
-    box-shadow: 10px 10px 30px #b8733356;
+    box-shadow: 10px 10px 30px #b8733333;
   }
   &:after {
     transform: translate(14px, 14px);

@@ -5,14 +5,18 @@
 }
 ::-webkit-scrollbar {
   width: 6px;
-}
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 10px;
-  height: 150px;
+  &-track {
+    border-radius: 10px;
+  }
+  &-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+    height: 150px;
+    &:hover,
+    :active {
+      background: rgb(158, 158, 158);
+    }
+  }
 }
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active {
@@ -29,7 +33,7 @@ html {
 }
 body {
   height: 100%;
-  background: #141414;
+  background: #0c0911;
   overflow: overlay;
 }
 .header {
@@ -153,11 +157,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #0d1117;
   box-shadow: rgba(0, 202, 255, 1);
   z-index: 1;
-  border-top: 1px solid #424242;
-  border-bottom: 1px solid #424242;
 }
 .projects-heading {
   float: left;
@@ -211,8 +212,8 @@ body {
   &__content {
     padding: 4rem 1rem;
     height: 600px;
-    background-color: #444444 !important;
-    border-radius: 18px;
+    background-color: #150f1e !important;
+    border-radius: 14px;
   }
   &__title {
     font-size: 1.25rem;
@@ -222,10 +223,10 @@ body {
 /* custom colors for each project element */
 .project-1 {
   &:before {
-    background-color: #ff0044 !important;
+    background-color: #b87333 !important;
   }
   &:after {
-    background-color: #ff004444 !important;
+    background-color: #b8733356 !important;
   }
 }
 .project-2 {
@@ -266,14 +267,13 @@ body {
 [class*="stacked-"]:after {
   z-index: -2;
 }
-/* moves elements on hover */
 .stacked-bottom-right:hover {
   transform: translate(-7px, -7px);
 }
 .project-1:hover {
   &:before {
     transform: translate(7px, 7px);
-    box-shadow: 10px 10px 30px #ff00443d;
+    box-shadow: 10px 10px 30px #b8733356;
   }
   &:after {
     transform: translate(14px, 14px);

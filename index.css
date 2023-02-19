@@ -7,15 +7,17 @@
 ::-webkit-scrollbar {
   width: 6px;
 }
-
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 10px;
   height: 150px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb :active {
+  background: rgb(158, 158, 158);
 }
 
 ::-webkit-scrollbar-thumb:hover,
@@ -35,7 +37,7 @@ html {
 
 body {
   height: 100%;
-  background: #141414;
+  background: #0c0911;
   overflow: overlay;
 }
 
@@ -150,11 +152,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #0d1117;
   box-shadow: rgb(0, 202, 255);
   z-index: 1;
-  border-top: 1px solid #424242;
-  border-bottom: 1px solid #424242;
 }
 
 .projects-heading {
@@ -216,8 +215,8 @@ body {
 .project__content {
   padding: 4rem 1rem;
   height: 600px;
-  background-color: #444444 !important;
-  border-radius: 18px;
+  background-color: #150f1e !important;
+  border-radius: 14px;
 }
 .project__title {
   font-size: 1.25rem;
@@ -226,10 +225,10 @@ body {
 
 /* custom colors for each project element */
 .project-1:before {
-  background-color: #ff0044 !important;
+  background-color: #b87333 !important;
 }
 .project-1:after {
-  background-color: rgba(255, 0, 68, 0.2666666667) !important;
+  background-color: rgba(184, 115, 51, 0.337254902) !important;
 }
 
 .project-2:before {
@@ -272,14 +271,13 @@ body {
   z-index: -2;
 }
 
-/* moves elements on hover */
 .stacked-bottom-right:hover {
   transform: translate(-7px, -7px);
 }
 
 .project-1:hover:before {
   transform: translate(7px, 7px);
-  box-shadow: 10px 10px 30px rgba(255, 0, 68, 0.2392156863);
+  box-shadow: 10px 10px 30px rgba(184, 115, 51, 0.337254902);
 }
 .project-1:hover:after {
   transform: translate(14px, 14px);
